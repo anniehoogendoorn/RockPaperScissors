@@ -15,3 +15,9 @@ div.main {
 button {
     text-align: center;
 }
+
+
+.form-control {
+    background-color:#FFF;
+    color: #FFF;
+}
