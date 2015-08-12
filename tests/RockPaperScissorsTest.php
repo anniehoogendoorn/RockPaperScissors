@@ -31,5 +31,19 @@
             $this->assertEquals("You have a tie!", $result);
 
         }
+
+        function test_playGame_differentInput()
+        {
+            //Arrange
+            $test_RockPaperScissors = new RockPaperScissors;
+            $user1 = "rock";
+            $user2 = "Paper";
+
+            //Act
+            $result = $test_RockPaperScissors->playGame($user1, $user2);
+
+            //Assert
+            $this->assertEquals("Player two wins!", $result);
+        }
     }
  ?>
