@@ -32,7 +32,7 @@
 
         }
 
-        function test_playGame_differentInput()
+        function test_playGame_differentInputCap()
         {
             //Arrange
             $test_RockPaperScissors = new RockPaperScissors;
@@ -44,6 +44,34 @@
 
             //Assert
             $this->assertEquals("Player two wins!", $result);
+        }
+
+        function test_playGame_differentInput()
+        {
+            //Arrange
+            $test_RockPaperScissors = new RockPaperScissors;
+            $user1 = "sciSSors";
+            $user2 = "PAPER";
+
+            //Act
+            $result = $test_RockPaperScissors->playGame($user1, $user2);
+
+            //Assert
+            $this->assertEquals("Player one wins!", $result);
+        }
+
+        function test_playGame_invalidInput()
+        {
+            //Arrange
+            $test_RockPaperScissors = new RockPaperScissors;
+            $user1 = "rock";
+            $user2 = "cat";
+
+            //Act
+            $result = $test_RockPaperScissors->playGame($user1, $user2);
+
+            //Assert
+            $this->assertEquals("Invalid input! Try again!", $result);
         }
     }
  ?>
