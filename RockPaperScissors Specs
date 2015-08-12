@@ -1,0 +1,50 @@
+//Both inputs are equal
+1. Both users enter rock --
+User1: rock
+User2: rock
+
+Output: "You have a tie!"
+
+// Both inputs are different
+2. One user enters rock, the other enters paper
+
+User1: rock
+User2: paper
+
+Output: "User2 wins!"
+
+//Capitalization
+3. Either word contains caps
+
+User1: Rock
+User2: rock
+
+Output: "You have a tie!"
+
+//Non-valid input
+4. One user enters a non-valid input for this game
+
+User1: cat
+User2: rock
+
+Output: "Invalid input, try again!"
+
+//No input
+5. One or both users leaves field blank
+
+User1: rock
+User2: " "
+
+Output: "You left a field blank!"
+
+
+
+
+
+
+//User misspels word
+6.User misspels rock
+User1: rock
+User2: rcok
+
+Output: "Check your spelling!"
