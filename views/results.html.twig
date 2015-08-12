@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+    <link href="css/custom.css" rel='stylesheet' type="text/css">
+    <title>Rock, Paper, Scissors!</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 main">
+                <h1 class="text-center">Rock, Paper, Scissors!</h1>
+
+                {% if result is not empty %}
+                    <p class="text-center">{{ result }}</p>
+                {% endif %}
+                <p>&nbsp;</p>
+                <div class='text-center'>
+                <a href="/"><button class="btn btn-default">Home</button></a>
+            </div>
+                <p></p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+        </div>
+    </div>
+</body>
+
+
+</html>

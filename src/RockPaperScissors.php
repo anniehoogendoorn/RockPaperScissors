@@ -6,6 +6,11 @@
             $player1 = strtolower($user1);
             $player2 = strtolower($user2);
             $player_options = array("rock", "paper", "scissors");
+
+            // Optional spell-check function?
+            // If sorted player input equals sorted player option
+            // Then return correct spelling and proceed
+
             if ((in_array($player1, $player_options)) && (in_array($player2, $player_options))) {
 
 

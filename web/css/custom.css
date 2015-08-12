@@ -1,0 +1,17 @@
+body {
+    background: url('../img/bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+div.main {
+    margin: 30px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 25px;
+    padding-bottom: 30px;
+}
+
+button {
+    text-align: center;
+}
