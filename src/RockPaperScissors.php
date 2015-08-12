@@ -7,12 +7,33 @@
             $player2 = strtolower($user2);
             $player_options = array("rock", "paper", "scissors");
 
-            // Optional spell-check function?
-            // If sorted player input equals sorted player option
-            // Then return correct spelling and proceed
+            if ($user1 == '' && $user2 == '') {
+                return "Invalid input! Try again!";
+            } elseif ($user1 == '') {
+                $player1 = $player_options[rand(0,2)];
+            } elseif ($user2 == '') {
+                $player2 = $player_options[rand(0,2)];
+            } else {
+                $player1 = strtolower($user1);
+                $player2 = strtolower($user2);
+                if ((in_array($player1, $player_options)) && (in_array($player2, $player_options))) {
+                    $player1 = $player1;
+                    $player2 = $player2;
+                } else {
+                    return "Invalid input! Try again!";
+                }
+            }
 
-            if ((in_array($player1, $player_options)) && (in_array($player2, $player_options))) {
 
+
+
+
+
+
+            //
+            //
+            // if ((in_array($player1, $player_options)) && (in_array($player2, $player_options))) {
+            //
 
                 // Both players enter the same input
                 if ($player1 == $player2) {
@@ -48,11 +69,11 @@
 
                 }
 
-
-
-            } else {
-                return "Invalid input! Try again!";
-            }
         }
+
+        //     } else {
+        //         return "Invalid input! Try again!";
+        //     }
+        // }
     }
  ?>

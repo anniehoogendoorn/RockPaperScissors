@@ -31,13 +31,13 @@ User2: rock
 
 Output: "Invalid input, try again!"
 
-//No input
-5. One or both users leaves field blank
+//If either fields are left blank, play against computer
 
 User1: rock
-User2: " "
+User2: ""
 
-Output: "You left a field blank!"
+
+
 
 
 
